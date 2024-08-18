@@ -1,0 +1,19 @@
+{
+    "version": "2.4.0",
+    "description": "FermiSurfer: A visualization tool for Fermi surfaces.",
+    "homepage": "https://github.com/mitsuaki1987/fermisurfer",
+    "license": "Unknown",
+    "url": "https://github.com/mitsuaki1987/fermisurfer/releases/download/2.4.0/fermisurfer.exe",
+    "hash": "sha256:adbb92cd86e2def3adc365b226c55dabe15bfa789f48dc8776dca9ff5f7d552d",
+    "bin": "fermisurfer.exe",
+    "checkver": {
+        "url": "https://github.com/mitsuaki1987/fermisurfer/releases",
+        "regex": "/releases/tag/([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/mitsuaki1987/fermisurfer/releases/download/$version/fermisurfer.exe",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
